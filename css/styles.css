@@ -223,15 +223,6 @@ background-repeat: no-repeat;
   font-size: 16px;
   line-height: 1.18;
 }
-.icon {
-  border: #212121 solid 2px;
-    display:block;
-    width: 44px;
-    height: 44px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  }
   
 /*team ehd*/
 /*footer*/
