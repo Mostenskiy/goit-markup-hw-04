@@ -1,0 +1,328 @@
+/* variables */
+:root {
+  --color-black: #212121;
+  --color-grey: #757575;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --color-background-footer: #2f303a;
+  --color-background-team: #f5f4fa;
+}
+/* reset styles */
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+/* base styles */
+.card-cet {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--color-grey);
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* element styles */
+/* header */
+.header-container {
+  display: flex;
+  align-content: center;
+}
+.header {
+  letter-spacing: 0.02em;
+  line-height: 1.142;
+  font-weight: 500;
+  font-style: normal;
+  border-bottom: 1px solid #eeeeee;
+}
+.header-logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-blue);
+}
+.logo-accent {
+  color: var(--color-black);
+}
+.header-nav {
+  margin-right: auto;
+}
+.header-list {
+  display: flex;
+  gap: 50px;
+  color: var(--color-black);
+}
+.header-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-cont-list {
+  display: flex;
+  gap: 50px;
+}
+.header-cont-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.akcent-nav {
+  color: var(--color-blue);
+}
+.header-link:hover,
+.header-link:focus,
+.header-link-cont:hover,
+.header-link-cont:focus {
+  color: var(--color-blue);
+}
+
+/* header end */
+/*hero*/
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /*background-color: var(--color-background-footer);*/
+  background-image:  url(D:\учеба\goit-markup-hw-04\imeges\home\Img-hirow.jpg);
+}
+.hero-title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.hero-button {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  background: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  cursor: pointer;
+}
+/*hero end*/
+/*benefits*/
+.benefits-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.benefits-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+/*benefits end*/
+/*aboot section */
+
+.aboot {
+  padding-top: 0;
+}
+
+.aboot-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+/*team*/
+.team {
+  background-color: var(--color-background-team);
+}
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+}
+
+.team-item {
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--color-white);
+}
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-name {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--color-black);
+}
+.team-desc {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+}
+/*team ehd*/
+/*footer*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-background-footer);
+}
+
+.logo-accent-footer {
+  color: var(--color-white);
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-item {
+  margin-bottom: 9px;
+}
+.footer-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-item:last-child {
+  margin-bottom: 0px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-white);
+}
+/* page portfolio */
+/* filter */
+.filter-button-div {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.filter-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-button {
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+  padding-inline-start: 22px;
+  padding-inline-end: 22px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  background: var(--color-background-team);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: var(--color-black);
+  cursor: pointer;
+  letter-spacing: 0.03em;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background: var(--color-blue);
+  color: var(--color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  letter-spacing: 0.03em;
+}
+.portfolio-title-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.portfolio-border {
+  padding: 24px 20px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.portfolio-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-black);
+}
+.portfolio-desc {
+  font-size: 16px;
+  line-height: 1.875;
+}
