@@ -31,6 +31,9 @@ p {
   color: currentColor;
 }
 /* base styles */
+.icon {
+  fill: ;
+}
 .card-cet {
   display: flex;
   gap: 30px;
@@ -102,8 +105,14 @@ body {
   gap: 50px;
 }
 .header-cont-item {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.icon-cont {
+  margin-right: 10px;
+  fill: #757575;
 }
 .akcent-nav {
   color: var(--color-blue);
@@ -114,17 +123,21 @@ body {
 .header-link-cont:focus {
   color: var(--color-blue);
 }
+.header-link-cont:hover .icon-cont,
+.header-link-cont:focus .icon-cont {
+  fill: var(--color-blue);
+}
 
 /* header end */
 /*hero*/
-.hero {background: rgba(47, 48, 58, 0.4);
+.hero {
+  background: rgba(47, 48, 58, 0.4);
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: url(https://raw.githubusercontent.com/Mostenskiy/goit-markup-hw-04/main/imeges/home/Img-hirow.jpg);
-background-size: 1600px 600px;
-background-position: center;
-background-repeat: no-repeat;
-  
+  background-size: 1600px 600px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-title {
   margin-right: auto;
@@ -164,7 +177,21 @@ background-repeat: no-repeat;
 .benefits-item {
   flex-basis: calc((100% - 90px) / 4);
 }
-
+.icon-benefits-beg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .benefits-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -222,16 +249,70 @@ background-repeat: no-repeat;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
 }
-  
-/*team ehd*/
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.icon {
+  fill: #afb1b8;
+}
+.social-link:hover {
+  background-color: #2196f3;
+}
+.social-link:hover .icon {
+  fill: #ffffff;
+}
+/* client */
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icon-client {
+  fill: #afb1b8;
+}
+.client-link:hover {
+  border: 1px solid #2196f3;
+}
+.client-link:hover .icon-client {
+  fill: #2196f3;
+}
+
 /*footer*/
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--color-background-footer);
 }
-
+.footer-card-cet {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
 .logo-accent-footer {
   color: var(--color-white);
 }
@@ -260,6 +341,23 @@ background-repeat: no-repeat;
 .footer-link:focus {
   color: var(--color-white);
 }
+.title-accent-footer {
+  color: #ffffff;
+}
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+.social-link-footer{display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 20px; align-items: center;
+  justify-content: center;
+}
+.icon-footer{ fill: white;}
+.social-link-footer:hover{ background-color: #2196f3;}
 /* page portfolio */
 /* filter */
 .filter-button-div {
