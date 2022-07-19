@@ -295,10 +295,12 @@ body {
 .icon-client {
   fill: #afb1b8;
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid #2196f3;
 }
-.client-link:hover .icon-client {
+.client-link:hover .icon-clien,
+.client-link:focus .icon-client {
   fill: #2196f3;
 }
 
@@ -360,7 +362,8 @@ body {
 .icon-footer {
   fill: white;
 }
-.social-link-footer:hover {
+.social-link-footer:hover,
+.social-link-footer:focus {
   background-color: #2196f3;
 }
 /* page portfolio */
