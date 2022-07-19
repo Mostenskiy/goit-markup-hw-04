@@ -336,7 +336,6 @@ body {
 .footer-item:last-child {
   margin-bottom: 0px;
 }
-
 .footer-link:hover,
 .footer-link:focus {
   color: var(--color-white);
@@ -348,16 +347,22 @@ body {
   display: flex;
   gap: 10px;
 }
-.social-link-footer{display: flex;
+.social-link-footer {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-top: 20px; align-items: center;
+  margin-top: 20px;
+  align-items: center;
   justify-content: center;
 }
-.icon-footer{ fill: white;}
-.social-link-footer:hover{ background-color: #2196f3;}
+.icon-footer {
+  fill: white;
+}
+.social-link-footer:hover {
+  background-color: #2196f3;
+}
 /* page portfolio */
 /* filter */
 .filter-button-div {
