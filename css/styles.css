@@ -6,6 +6,8 @@
   --color-blue: #2196f3;
   --color-background-footer: #2f303a;
   --color-background-team: #f5f4fa;
+  --color-icon-fill: #afb1b8;
+  --color-portfolio-border: #eeeeee;
 }
 /* reset styles */
 img {
@@ -32,7 +34,7 @@ p {
 }
 /* base styles */
 .icon {
-  fill: ;
+  fill: var(--color-icon-fill);
 }
 .card-cet {
   display: flex;
@@ -69,7 +71,7 @@ body {
   line-height: 1.142;
   font-weight: 500;
   font-style: normal;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--color-portfolio-border);
 }
 .header-logo {
   padding-top: 25px;
@@ -105,14 +107,16 @@ body {
   gap: 50px;
 }
 .header-cont-item {
-  display: flex;
-  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.header-link-cont {
+  display: flex;
+  align-items: center;
+}
 .icon-cont {
   margin-right: 10px;
-  fill: #757575;
+  color: currentColor;
 }
 .akcent-nav {
   color: var(--color-blue);
@@ -125,16 +129,16 @@ body {
 }
 .header-link-cont:hover .icon-cont,
 .header-link-cont:focus .icon-cont {
-  fill: var(--color-blue);
+  fill: currentColor;
 }
 
 /* header end */
 /*hero*/
 .hero {
-  background: rgba(47, 48, 58, 0.4);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(https://raw.githubusercontent.com/Mostenskiy/goit-markup-hw-04/main/imeges/home/Img-hirow.jpg);
+  background: rgba(47, 48, 58, 0.4)
+    url(https://raw.githubusercontent.com/Mostenskiy/goit-markup-hw-04/main/imeges/home/Img-hirow.jpg);
   background-size: 1600px 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -181,9 +185,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--color-background-team);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -264,17 +267,17 @@ body {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.icon {
-  fill: #afb1b8;
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-blue);
 }
-.social-link:hover {
-  background-color: #2196f3;
-}
-.social-link:hover .icon {
-  fill: #ffffff;
+.social-link:hover .icon,
+.social-link:focus .icon {
+  fill: var(--color-white);
 }
 /* client */
 .client-list {
@@ -283,25 +286,24 @@ body {
   justify-content: center;
   gap: 30px;
 }
+.client-item {
+  flex-basis: calc((100% - 150px) / 6);
+}
 .client-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
   border-radius: 4px;
+  color: var(--color-icon-fill);
 }
 .icon-client {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .client-link:hover,
 .client-link:focus {
-  border: 1px solid #2196f3;
-}
-.client-link:hover .icon-clien,
-.client-link:focus .icon-client {
-  fill: #2196f3;
+  color: var(--color-blue);
 }
 
 /*footer*/
@@ -343,7 +345,7 @@ body {
   color: var(--color-white);
 }
 .title-accent-footer {
-  color: #ffffff;
+  color: var(--color-white);
 }
 .footer-social-list {
   display: flex;
@@ -359,12 +361,15 @@ body {
   align-items: center;
   justify-content: center;
 }
-.icon-footer {
-  fill: white;
+.footer .social-list {
+  margin-top: 30px;
+}
+.footer .icon {
+  fill: var(--color-white);
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
-  background-color: #2196f3;
+  background-color: var(--color-blue);
 }
 /* page portfolio */
 /* filter */
@@ -418,11 +423,16 @@ body {
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
 }
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .portfolio-border {
   padding: 24px 20px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid var(--color-portfolio-border);
+  border-left: 1px solid var(--color-portfolio-border);
+  border-bottom: 1px solid var(--color-portfolio-border);
 }
 .portfolio-title {
   margin-bottom: 4px;
