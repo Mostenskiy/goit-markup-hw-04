@@ -98,7 +98,8 @@ body {
   gap: 50px;
   color: var(--color-black);
 }
-.header-item {
+.header-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -116,7 +117,7 @@ body {
 }
 .icon-cont {
   margin-right: 10px;
-  color: currentColor;
+  fill: currentColor;
 }
 .akcent-nav {
   color: var(--color-blue);
@@ -137,7 +138,7 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background: rgba(47, 48, 58, 0.4)
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(https://raw.githubusercontent.com/Mostenskiy/goit-markup-hw-04/main/imeges/home/Img-hirow.jpg);
   background-size: 1600px 600px;
   background-position: center;
@@ -280,12 +281,6 @@ body {
   fill: var(--color-white);
 }
 /* client */
-.client-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
 .client-item {
   flex-basis: calc((100% - 150px) / 6);
 }
@@ -344,7 +339,13 @@ body {
 .footer-link:focus {
   color: var(--color-white);
 }
-.title-accent-footer {
+.footer-social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--color-white);
 }
 .footer-social-list {
@@ -360,9 +361,6 @@ body {
   margin-top: 20px;
   align-items: center;
   justify-content: center;
-}
-.footer .social-list {
-  margin-top: 30px;
 }
 .footer .icon {
   fill: var(--color-white);
@@ -423,8 +421,11 @@ body {
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
